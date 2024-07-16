@@ -4,6 +4,8 @@ import React from 'react'
 
 const redesign = () => {
   return (
+
+
     
     <View style={styles.page}>
       <TouchableOpacity>

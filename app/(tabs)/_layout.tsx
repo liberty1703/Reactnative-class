@@ -1,155 +1,88 @@
-import { View, Image, Text, TouchableOpacity,StyleSheet } from 'react-native'
+import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 
-
-const redesign = () => {
+const _layout = () => {
   return (
-
-
-    
     <View style={styles.page}>
-      <TouchableOpacity>
       <Image
-      source={require("../../assets/images/settings.png")}
+      source={require('../../assets/images/planett.jpg')}
       style={{
-        height:5,
-        width:5,
-        paddingHorizontal:20,
-        paddingVertical:20,
-        alignSelf: 'flex-end',
-        justifyContent: 'center',
-        backgroundColor: "#ffff"
+        height:50,
+        width:50,
+        alignSelf: 'center',
+        borderRadius:150,
       }}
       />
-      </TouchableOpacity>
-      <Image
-      source={require(
-        "../../assets/images/FacebookLite.png"
-      )}
-      style={{
-        height:60,
-        width:60,
-        alignSelf:'center',
-        justifyContent: 'center',
-        marginTop:40,
-        borderColor:"grey",
-        borderWidth:1,
-        borderRadius:30,
-      }}
-      />
-      <Image
-      source={require("../../assets/images/picture.jpg")}
-      style={{
-        height:260,
-        width: 260,
-        borderRadius:125,
-        marginTop:20,
-        alignSelf:'center',
+      <Text style={{
+        fontSize:30,
+        textAlign:'center',
         justifyContent:'center',
-        borderColor:"#FFFF",
-        borderWidth:10,
-      }} />
-
+        marginTop:10,
+        color:"#55E6C1",
+        fontWeight:'bold',
+      }}>
+        Explorezy
+      </Text>
+      <Text style={{
+        fontSize:30,
+        textAlign:'center',
+        justifyContent:'center',
+        marginTop:10,
+        color:"black",
+        fontWeight:'bold',
+      }}>
+        Congratulations!
+      </Text>
+      <Image
+      source={require("../../assets/images/happy.jpg")}
+      style={{
+        height:300,
+        width:300,
+        borderRadius:150,
+        marginTop:10,
+        alignSelf: 'center'
+      }}
+      />
       <Text style={{
         fontSize:35,
-        fontWeight:'bold',
-        marginTop:20,
         textAlign:'center',
-        justifyContent: 'center',
-      }}>
-      Jewoola Favour
-      </Text>
-      <Text style={{
-        fontSize:15,
+        justifyContent:'center',
+        marginTop:10,
+        color:"black",
         fontWeight:'bold',
-        marginTop:3,
-        textAlign:'center',
-        justifyContent: 'center',
-        color: "grey"
       }}>
-      9+ notifications
+        Your signup was {"\n"}succesful!
       </Text>
-      <TouchableOpacity style= {styles.clikbtn1}>
+      <TouchableOpacity style={styles.clk7}>
         <Text style={{
-          fontSize:20,
-          
-          textAlign:'center',
-          justifyContent: 'center',
-          fontWeight: 'bold',
-          color: "white"
+          fontSize:25,
+          color: "white",
+          fontWeight:'bold',
+          alignSelf:'center'
+
         }}>
-          Log in
-        </Text>
-      </TouchableOpacity>
-      <TouchableOpacity style= {styles.clikbtn2}>
-        <Text style={{
-          fontSize:20,
-          
-          textAlign:'center',
-          justifyContent: 'center',
-          fontWeight: 'bold',
-          color: "black"
-        }}>
-          Log into another account
-        </Text>
-      </TouchableOpacity>
-      <TouchableOpacity style= {styles.clikbtn3}>
-        <Text style={{
-          fontSize:20,
-          
-          textAlign:'center',
-          justifyContent: 'center',
-          fontWeight: 'bold',
-          color: "blue"
-        }}>
-          create new account
+          Continue
         </Text>
       </TouchableOpacity>
     </View>
   )
 }
 
-export default redesign
-const styles = StyleSheet.create ({
-  page:{
+export default _layout
+
+const styles = StyleSheet.create({
+  page: {
     backgroundColor:"white",
     flex:1,
-  },
-  clikbtn1: {
-    height:50,
-    width:350,
-    backgroundColor:"blue",
     paddingHorizontal:20,
-    marginHorizontal:20,
-    marginTop: 20,
-    borderRadius:30,
-    alignItems: "center",
-    justifyContent: 'center',
+    paddingTop:20,
   },
-  clikbtn2:{
+  clk7:{
     height:50,
-    width:350,
-    backgroundColor:"white",
+    backgroundColor: "#55E6C1",
     paddingHorizontal:20,
-    marginHorizontal:20,
-    marginTop: 20,
-    borderRadius:30,
-    alignItems: "center",
-    justifyContent: 'center',
-    borderWidth:1,
-    borderColor:"grey"
+    justifyContent: "center",
+    marginTop:20,
+    borderRadius:10,
   },
-  clikbtn3:{
-    height:50,
-    width:350,
-    backgroundColor:"white",
-    paddingHorizontal:20,
-    marginHorizontal:20,
-    marginTop: 20,
-    borderRadius:30,
-    alignItems: "center",
-    justifyContent: 'center',
-    borderWidth:1,
-    borderColor:"blue"
-  }
 })

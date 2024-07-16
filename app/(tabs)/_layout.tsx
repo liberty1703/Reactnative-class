@@ -1,8 +1,10 @@
 import { View, Image, Text, TouchableOpacity,StyleSheet } from 'react-native'
 import React from 'react'
 
+
 const redesign = () => {
   return (
+    
     <View style={styles.page}>
       <TouchableOpacity>
       <Image

@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View,  Image, TouchableOpacity, TextInput } from 'react-native'
+import { StyleSheet, Text, View,  Image, TouchableOpacity, TextInput, ScrollView } from 'react-native'
 import React from 'react'
 
 const _layout = () => {
@@ -24,6 +24,7 @@ const _layout = () => {
         borderRadius:150,
       }}
       />
+      <ScrollView showsVerticalScrollIndicator={false} >
             <Text style={{
         fontSize:30,
         textAlign:'center',
@@ -119,6 +120,7 @@ const _layout = () => {
           Sign Up with Facebook
         </Text>
         </TouchableOpacity>
+        </ScrollView>
     </View>
   )
 }
